@@ -15,14 +15,26 @@
 <body>
 
 
-    <div class="container-fluid">
+    <div class="container-fluid bg-info">
         <div class="container">
-            <div class="row">
+            <div class="row gy-3 justify-content-between">
                 @foreach ($film as $item)
-                <div class="col-2">
-                    <div class="row flex-column">
+                <div class="col-5">
+                    <div class="row flex-column text-center card">
                         <div class="col-12">
-                            {{$item['original_title']}}
+                            <img src="/images/error.png" alt="iamges errror">
+                        </div>
+                        <div class="col-12">
+                            {{$item['title']}}
+                        </div>
+                        <div class="col-12">
+                            {{$item['nationality']}}
+                        </div>
+                        <div class="col-12">
+                            {{$item['date']}}
+                        </div>
+                        <div class="col-12">
+                            {{$item['vote']}}
                         </div>
                     </div>
                 </div>
